@@ -13,8 +13,4 @@
         padding: 1rem 0;
         letter-spacing: .1rem;
     }
-
-    &__menu {
-        display: none;
-    }
 }

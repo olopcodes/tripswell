@@ -1,0 +1,84 @@
+.nav {
+    width: 100vw;
+    height: 50vh;
+    
+
+    &__hamburger {
+        height: 3.5rem;
+        width: 3.5rem;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__hamburger-line {
+        width: 100%;
+        height: 2px;
+        background-color: $snow;
+        position: relative;
+    }
+
+    &__hamburger-line::after, &__hamburger-line::before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: $snow;
+        position: absolute;
+    }
+
+    &__hamburger-line::after {
+        top: 1rem;
+    }
+
+    &__hamburger-line::before {
+        top: -1rem;
+    }
+
+    &__links {
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        padding: 1rem;
+    }
+
+    &__sign {
+        font-size: 1.3rem;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    &__login, &__signup {
+        display: inline-block;
+        padding: 1.5rem 2.5rem;
+        text-transform: uppercase;
+        transition: .25s;
+        background-color: $secondary;
+        color: $primary;
+        font-weight: bold;
+    }
+
+    &__login {
+        background-color: $snow;
+        color: $primary;
+
+        &:hover {
+            background-color: $primary;
+            color: $snow;
+        }
+    }
+
+    &__signup:hover {
+        background-color: $primary;
+        color: $secondary;
+    }
+    
+}

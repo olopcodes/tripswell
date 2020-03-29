@@ -5,6 +5,7 @@
 @import 'base/_utils';
 @import 'modules/_wrapper';
 @import 'modules/_header';
+@import 'modules/_nav';
 @import 'modules/_hero';
 @import 'modules/_heading';
 @import 'modules/_btn';
