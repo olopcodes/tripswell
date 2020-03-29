@@ -1,0 +1,57 @@
+.footer {
+    background-color: $primary;
+
+    &__content {
+        padding: 2rem 0 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__logo {
+        flex: 1;
+        font-size: 3rem;
+    }
+
+    &__links {
+        flex: 2;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__link, &__link:visited {
+        color: $snow;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $tan;
+        }
+    }
+
+    &__socials{
+        flex: 100%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    &__social, &__social:visited {
+        color: $snow;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+
+        &:hover {
+            color: $tan;
+        }
+    }
+
+    &__copy {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        color: $snow;
+        width: 100%;
+        text-align: center;
+    }
+   
+}

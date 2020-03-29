@@ -17,13 +17,17 @@
     } */
 
     &__trip {
-        width: 30rem;
+        width: 25rem;
         height: 40rem;
         margin: auto;
         overflow: hidden;
         border-radius: .5rem;
         position: relative;
         box-shadow: 5px 5px 8px rgba(0,0,0,.3);
+
+        @mixin atSmall {
+            width: 30rem;
+        }
     }
 
     &__img {
