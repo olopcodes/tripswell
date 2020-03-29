@@ -1,0 +1,85 @@
+.py {
+    &--small {
+        padding: 2rem 0;
+    }
+
+    &--med {
+        padding: 3rem 0;
+    }
+
+    &--lrg {
+        padding: 6rem 0;
+    }
+}
+
+.px {
+    &--small {
+        padding: 0 2rem;
+    }
+
+    &--med {
+        padding: 0 3rem;
+    }
+
+    &--lrg {
+        padding: 0 6rem;
+    }
+}
+
+.my {
+    &--small {
+        margin: 2rem 0;
+    }
+
+    &--med {
+        margin: 3rem 0;
+    }
+
+    &--lrg {
+        margin: 6rem 0;
+    }
+}
+
+.mx {
+
+    &--small {
+        margin: 0 2rem;
+    }
+
+    &--med {
+        margin: 0 3rem;
+    }
+
+    &--lrg {
+        margin: 0 6rem;
+    }
+}
+
+.p {
+    &--small {
+        padding: 2rem;
+    }
+
+    &--med {
+        padding: 3rem;
+    }
+
+    &--lrg {
+        padding: 6rem;
+    }
+}
+
+
+.m {
+    &--small {
+        margin: 2rem;
+    }
+
+    &--med {
+        margin: 3rem;
+    }
+
+    &--lrg {
+        margin: 6rem;
+    }
+}

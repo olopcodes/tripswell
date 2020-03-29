@@ -1,0 +1,13 @@
+.btn {
+    font-size: 1.6rem;
+    display: inline-block;
+    padding: .8rem 1.2rem;
+    background-color: $primary;
+    border-radius: .3rem;
+
+    &__trip--right {
+        margin-left: .5rem;
+        background-color: $secondary;
+        color: $primary;
+    }
+}

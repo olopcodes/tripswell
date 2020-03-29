@@ -1,0 +1,20 @@
+.header {
+    background-color: $primary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+   
+    
+    &__logo {
+        font-size: 3rem;
+        display: inline-block;
+        padding: 1rem 0;
+        letter-spacing: .1rem;
+    }
+
+    &__menu {
+        display: none;
+    }
+}

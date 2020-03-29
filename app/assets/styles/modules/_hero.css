@@ -1,0 +1,22 @@
+.hero {
+    padding: 5rem 0 5rem;
+    background: linear-gradient(45deg, rgba($primary,.7) 40%, rgba($snow,.5) 100%), url('../assets/images/header-small.jpg') center no-repeat;
+    background-size: cover;
+    height: 30rem;
+    position: relative;
+    @mixin atSmall {
+        padding: 5rem 0 10rem;
+
+    }
+
+    &__text {
+        width: 250px;
+        right: 1rem;
+        position: absolute;
+        bottom: 4rem;
+        border-radius: .5rem;
+        padding: 2rem;
+        color: $primary;
+        background-color: $secondary;
+    }
+}

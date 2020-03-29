@@ -1,0 +1,41 @@
+.trips {
+    background-color: $lightBlue;
+    padding: 5rem 0;
+    
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 3rem;
+        h2 span {
+            display: block;
+        }
+    }
+
+    /* &__slideshow {
+        display: flex;
+    } */
+
+    &__trip {
+        width: 85%;
+        height: 40rem;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        position: relative;
+        box-shadow: 3px 3px 5px rgba(0,0,0,.3);
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        background-color: $tan;
+        padding: 2rem 1rem;
+        background-color: $primary;
+    }
+}
