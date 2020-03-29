@@ -4,7 +4,14 @@
     &__post {
         @mixin clearfix;
         margin: 3rem 0;
+
+        &:not(:last-of-type){
+            padding: 1.5rem;
+            border-bottom: 1px dotted $primary;
+        }
     }
+
+    
 
 
 }

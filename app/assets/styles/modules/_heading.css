@@ -37,18 +37,22 @@
     }
 
     &__description {
-        color: $tan;
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
+        color: $grey;
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
 
-        &--small{
-            font-size: 1.2rem;
-            margin-bottom: .5rem;
+        @mixin atSmall {
+            font-size: 1.6rem;
+            margin-bottom: 1;
         }
 
         &--blog {
             font-size: 1.2rem;
             color: $grey;
+        }
+
+        &--light {
+            color: $lightGrey;
         }
     }
 

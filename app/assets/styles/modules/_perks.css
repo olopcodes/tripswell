@@ -1,0 +1,58 @@
+.perks {
+    background-color: $lightBlue;
+    padding: 5rem 0;
+
+    &__perk:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    &__imgs {
+        position: relative;
+        height: 20rem;
+        margin-bottom: 3rem;
+    }
+
+    &__img {
+        box-shadow: 5px 5px 8px rgba(0,0,0,.4);
+        position: absolute;
+
+    }
+
+    &__img--1 {
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    
+    &__img--2 {
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+    }
+    
+
+    &__icon {
+        text-align: center;
+        /*allows the icon center*/
+        display: block;
+        font-size: 4rem;
+        color: $primary;
+        margin-bottom: 2rem;
+    }
+
+    &__text h3 {
+        position: relative;
+        padding-bottom: 5px;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text h3::after {
+        content: '';
+        width: 25%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        border-bottom: 3px solid $primary;
+    }
+}
