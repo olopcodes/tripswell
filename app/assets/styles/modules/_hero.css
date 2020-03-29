@@ -13,10 +13,10 @@
         width: 250px;
         right: 1rem;
         position: absolute;
-        bottom: 4rem;
+        bottom: -3rem;
         border-radius: .5rem;
         padding: 2rem;
         color: $primary;
-        background-color: $secondary;
+        background-color: rgba($secondary, .7);
     }
 }

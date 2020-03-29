@@ -1,0 +1,10 @@
+.blog{
+    padding: 5rem 0;
+
+    &__post {
+        @mixin clearfix;
+        margin: 3rem 0;
+    }
+
+
+}

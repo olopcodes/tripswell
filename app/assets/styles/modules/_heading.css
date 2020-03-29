@@ -2,26 +2,58 @@
     &__main {
         color: $primary;
         font-size: 2.5rem;
+        margin-bottom: 1rem;
         @mixin atSmall {
             font-size: 3.5rem;
         }
 
         &--small {
             font-size: 2rem;
+            margin-bottom: .5rem;
         }
+
+        &--blog {
+            text-align: center;
+            font-style: italic;
+
+            span {
+                position: relative;
+                top: 20px;
+                left: -20px;
+            }
+        }
+    }
+
+    &__sub{
+        font-size: 2rem;
+        font-style: italic;
+        color: $primary;
+    }
+
+    &__author {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        color: $primary;
     }
 
     &__description {
         color: $tan;
         font-size: 1.6rem;
+        margin-bottom: 1rem;
 
         &--small{
             font-size: 1.2rem;
+            margin-bottom: .5rem;
+        }
+
+        &--blog {
+            font-size: 1.2rem;
+            color: $grey;
         }
     }
 
     &--light {
-        color: $tan;
+        color: $secondary;
     }
 
     
