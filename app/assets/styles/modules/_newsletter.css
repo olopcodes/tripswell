@@ -1,0 +1,30 @@
+.newsletter {
+    padding: 5rem 0;
+    background-color: $secondary;
+    text-align: center;
+
+    &__form {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__input {
+        border: none;
+        outline: none;
+        padding-left: .5rem;
+        font-size: 1.2rem;
+        width: 80%;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        color: $grey;
+        background-color: $tan;
+
+    }
+
+    &__input:focus {
+        border: none;
+    }
+
+
+}

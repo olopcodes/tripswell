@@ -67,4 +67,21 @@
     &--uppercase {
         text-transform: uppercase;
     }
+
+    &--submit {
+        outline: none;
+        border: none;
+        color: $tan;
+        font-size: 1.3rem;
+        border-top-left-radius: none;
+        border-bottom-left-radius: none;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        transition: .3s;
+
+        &:hover {
+            background-color: $tan;
+            color: $primary;
+        } 
+    }   
 }

@@ -2,14 +2,24 @@
     background-color: $lightBlue;
     padding: 5rem 0;
 
+    &__perk{
+        width: 80%;
+        margin: auto;
+    }
+
     &__perk:not(:last-child) {
         margin-bottom: 3rem;
     }
 
     &__imgs {
+        width: 100%;
+        margin: auto;
         position: relative;
         height: 20rem;
         margin-bottom: 3rem;
+        @mixin atSmall {
+            width: 80%;
+        }
     }
 
     &__img {
