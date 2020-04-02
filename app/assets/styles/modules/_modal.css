@@ -10,6 +10,7 @@
     z-index: 100;
     background-color: $primary;
     
+    
     &__logo h1 {
         font-size: 4rem;
         font-style: italic;
@@ -33,6 +34,7 @@
         flex-direction: column;
         margin: 0 auto;
         height: 25rem;
+        transition: .25s ease-in-out;
     }
 
     &__logo {
@@ -41,13 +43,18 @@
 
     &__signup {
         /*this does not take the item out of the page*/
-        /*transform: scale(0);*/
+        transform: scale(0);
         display: none;
     }
 
+    
+
     &__login {
+        transform: scale(0);
         display: none;
     }
+
+    
 
     &__label {
         font-size: 1.5rem;
@@ -89,5 +96,15 @@
 
     &__btn--signup {
         background-color: $secondary;
+    }
+
+    &__signup.display {
+        transform: scale(1);
+        display: flex;
+    }
+
+    &__login.display {
+        transform: scale(1);
+        display: flex;
     }
 }

@@ -1,6 +1,7 @@
 import '../styles/styles.css';
 import 'lazysizes';
 import ShowNav from './modules/ShowNav';
+import ShowModal from './modules/ShowModal';
 
 // import ClientArea from './modules/ClientArea';
 
@@ -14,6 +15,7 @@ import ShowNav from './modules/ShowNav';
 // ReactDOM.render(<MyAmazingComponent />, document.querySelector('#react-example'))
 
 new ShowNav();
+new ShowModal();
 
 
 // inheritance
