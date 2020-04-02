@@ -1,8 +1,26 @@
 .nav {
     width: 100vw;
     /*this will be animated*/
-    height: 100vh;
-    height: 0vh;
+    height: 0;
+    transition: height .25s ease-in-out;
+
+    /* this will be added when the hamburger is clicked*/
+    &.show {
+        height: 100vh;
+        /*all these styles will happen when the show class is on the nav*/
+        .nav__hamburger-line::before {
+            transform: rotate(40deg);
+        }
+
+        .nav__hamburger-line {
+            background-color: transparent;
+        }
+
+        .nav__hamburger-line::after {
+            transform: rotate(-45deg) translateY(3px);
+        }
+    }
+    
 
     &__hamburger {
         height: 3.5rem;
@@ -21,6 +39,7 @@
         height: 2px;
         background-color: $snow;
         position: relative;
+        transition: .25s ease-in-out;
     }
 
     &__hamburger-line::after, &__hamburger-line::before {
@@ -29,15 +48,24 @@
         height: 2px;
         background-color: $snow;
         position: absolute;
-    }
+        color: $snow;
+        transition: .25s ease-in-out;
 
-    &__hamburger-line::after {
-        top: 1rem;
     }
 
     &__hamburger-line::before {
         top: -1rem;
+        transform-origin: bottom left;
     }
+
+   
+
+    &__hamburger-line::after {
+        top: 1rem;
+        transform-origin: bottom left;
+    }
+
+    
 
     &__links {
         margin-bottom: 5rem;

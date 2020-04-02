@@ -1,5 +1,6 @@
 import '../styles/styles.css';
 import 'lazysizes';
+import ShowNav from './modules/ShowNav';
 
 // import ClientArea from './modules/ClientArea';
 
@@ -12,8 +13,7 @@ import 'lazysizes';
 
 // ReactDOM.render(<MyAmazingComponent />, document.querySelector('#react-example'))
 
-
-new ClientArea();
+new ShowNav();
 
 
 // inheritance

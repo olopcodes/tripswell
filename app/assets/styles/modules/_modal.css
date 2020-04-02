@@ -1,4 +1,5 @@
 .modal {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,7 +42,7 @@
     &__signup {
         /*this does not take the item out of the page*/
         /*transform: scale(0);*/
-        
+        display: none;
     }
 
     &__login {
