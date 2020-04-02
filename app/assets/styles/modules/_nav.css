@@ -1,6 +1,8 @@
 .nav {
     width: 100vw;
-    height: 50vh;
+    /*this will be animated*/
+    height: 100vh;
+    height: 0vh;
     
 
     &__hamburger {
@@ -39,6 +41,7 @@
     }
 
     &__links {
+        margin-bottom: 5rem;
         padding: 2rem 0;
         display: flex;
         flex-direction: column;

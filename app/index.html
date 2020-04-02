@@ -218,5 +218,35 @@
       </div><!-- footer content-->
     </div><!--wrapper-->
   </footer>
+
+  <div class="modal">
+    <a class="modal__logo" href="index.html">
+      <h1>tripswell</h1>
+    </a>
+    <p class="modal__close">CLOSE</p>
+
+    <form class="modal__signup modal__modal">
+      <label class="modal__label modal__label--signup" for="username">Userame</label>
+      <input class="modal__input modal__input--signup"type="text" name="username" id="username" placeholder="enter your username" required>
+
+      <label class="modal__label modal__label--signup" for="email">Email</label>
+      <input class="modal__input modal__input--signup" type="email" name="email" id="email" placeholder="enter your email">
+
+      <label class="modal__label modal__label--signup" for="password">Password</label>
+      <input class="modal__input modal__input--signup" type="password" placeholder="enter your password" required min="8" max="20">
+
+      <input class="modal__btn modal__btn--signup" type="submit" value="sign up">
+    </form>
+
+    <form class="modal__login modal__modal">
+      <label class="modal__label" for="username">Userame/Email</label>
+      <input class="modal__input"type="text" name="username" id="username" placeholder="enter your username or email" required>
+
+      <label class="modal__label" for="password">Password</label>
+      <input class="modal__input" type="password" placeholder="enter your password" required min="8" max="20">
+
+      <input class="modal__btn modal__btn--login" type="submit" value="log in">
+    </form>
+  </div>
 </body>
 </html>

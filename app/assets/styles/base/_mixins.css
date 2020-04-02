@@ -24,3 +24,9 @@
 
     }
 }
+
+@define-mixin centerContent {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}

@@ -1,0 +1,92 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: $primary;
+    
+    &__logo h1 {
+        font-size: 4rem;
+        font-style: italic;
+        margin: 3rem 0;
+    }
+
+    &__close {
+        @mixin clearfix;
+        float: right;
+        display: inline-block;
+        padding: 1.2rem 1.8rem;
+        font-size: 1.3rem;
+        color: $snow;
+        text-align: right;
+    }
+
+
+    &__modal {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        height: 25rem;
+    }
+
+    &__logo {
+        text-align: center;
+    }
+
+    &__signup {
+        /*this does not take the item out of the page*/
+        /*transform: scale(0);*/
+        
+    }
+
+    &__login {
+        display: none;
+    }
+
+    &__label {
+        font-size: 1.5rem;
+        color: $secondary;
+        padding: 1rem;
+    }
+
+    &__input {
+        font-size: 1.3rem;
+        padding: 1rem;
+        background-color: $tan;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__btn {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-top: 3rem;
+        text-transform: uppercase;
+        padding: 1rem;
+        outline: none;
+        border: none;
+        color: $primary;
+        background-color: $snow;
+        cursor: pointer;
+    }
+
+    &__label--signup {
+        color: $secondary;
+    }
+
+    &__input--signup {
+        background-color: $lightBlue;
+        
+    }
+
+    &__btn--signup {
+        background-color: $secondary;
+    }
+}
