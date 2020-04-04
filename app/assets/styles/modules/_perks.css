@@ -4,7 +4,11 @@
 
     &__perk{
         width: 80%;
-        margin: auto;
+        margin: 5rem auto 0;
+
+        @mixin atMedium {
+            width: 60%;
+        }
     }
 
     &__perk:not(:last-child) {

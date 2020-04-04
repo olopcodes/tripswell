@@ -18,6 +18,10 @@
         margin: auto;
         overflow: hidden;
         position: relative;
+
+        @mixin atSmall {
+            width: 30rem;
+        }
     } 
 
     &__trip {
@@ -31,9 +35,7 @@
         transition: .25s ease-in-out;
         opacity: 0;
 
-        @mixin atSmall {
-            width: 30rem;
-        }
+        
     }
 
     &__trip.current {

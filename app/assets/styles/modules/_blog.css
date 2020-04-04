@@ -1,6 +1,11 @@
 .blog{
     padding: 5rem 0;
 
+    &__blogs {
+        width: 70%;
+        margin: 0 auto;
+    }
+
     &__post {
         @mixin clearfix;
         margin: 3rem 0;

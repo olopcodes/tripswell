@@ -7,6 +7,11 @@
         margin-top: 3rem;
         display: flex;
         justify-content: center;
+
+        @mixin atMedium {
+            width: 70%;
+            margin: 3rem auto 0;
+        }
     }
 
     &__input {

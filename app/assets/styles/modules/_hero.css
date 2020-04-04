@@ -6,7 +6,12 @@
     position: relative;
     @mixin atSmall {
         padding: 5rem 0 10rem;
+        height: 70vh;
 
+    }
+
+    @mixin atLarge {
+        height: 90vh;
     }
 
     &__text {
@@ -18,5 +23,12 @@
         padding: 2rem;
         color: $primary;
         background-color: rgba($secondary, .8);
+
+        @mixin atLarge {
+            right: 10rem;
+            width: 40rem;
+            height: 25rem;
+            padding: 5rem;
+        }
     }
 }
