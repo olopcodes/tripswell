@@ -2,6 +2,7 @@ import '../styles/styles.css';
 import 'lazysizes';
 import ShowNav from './modules/ShowNav';
 import ShowModal from './modules/ShowModal';
+import Slider from './modules/Slider';
 
 // import ClientArea from './modules/ClientArea';
 
@@ -16,6 +17,7 @@ import ShowModal from './modules/ShowModal';
 
 new ShowNav();
 new ShowModal();
+new Slider();
 
 
 // inheritance
