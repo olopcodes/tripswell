@@ -26,8 +26,8 @@
 
         @mixin atLarge {
             right: 10rem;
-            width: 40rem;
-            height: 25rem;
+            width: 60rem;
+            height: 30rem;
             padding: 5rem;
         }
     }

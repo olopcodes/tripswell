@@ -1,5 +1,26 @@
 .row {
-    @mixin atLarge {
-        display: flex;
+    
+    &--one {
+        @mixin atLarge {
+            display: grid;
+            grid-template-columns: 55% 45%;
+        }
+
+        & .trips {
+            grid-column: 2/3;
+        }
+
+        & .blog {
+            grid-row: 1/1;
+            grid-column: 1/2;
+        }
+    }
+
+
+    &--two {
+        @mixin atLarge {
+            display: flex;
+            justify-content: space-evenly;
+        }
     }
 }

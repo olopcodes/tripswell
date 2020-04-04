@@ -22,6 +22,11 @@
         @mixin atSmall {
             width: 30rem;
         }
+
+        @mixin atLarge {
+            height: 50rem;
+            width: 40rem;
+        }
     } 
 
     &__trip {
@@ -55,6 +60,10 @@
         background-color: $tan;
         padding: 2rem 1rem;
         background-color: $primary;
+
+        @mixin atLarge {
+            padding: 2.5rem;
+        }
     }
 
     &__trip--1 {
