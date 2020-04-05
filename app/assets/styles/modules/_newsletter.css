@@ -1,6 +1,6 @@
 .newsletter {
     padding: 5rem 0;
-    background-color: $secondary;
+    background-color: $snow;
     text-align: center;
 
     &__form {

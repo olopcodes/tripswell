@@ -1,13 +1,7 @@
 .perks {
-    background-color: $lightBlue;
+    background-color: $secondary;
     padding: 5rem 0;
     transition: background-color .3s ease-in-out;
-
-    @mixin atLarge {
-        background-color: $tan;
-    }
-
-    
 
     &__perk{
         width: 80%;
