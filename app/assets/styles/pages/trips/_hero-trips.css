@@ -21,6 +21,7 @@
         background: linear-gradient(144deg, rgba(75,100,75,.9) 3%, 
                 rgba($snow, .8) 92%), url('../../assets/images/trip-hero-large.jpg') no-repeat center;
         background-size: cover;
+        height: 90vh;
     }
 
     &__text {

@@ -5,26 +5,61 @@
     }
 
     &__trip{
+        display: flex;
+        flex-direction: column;
 
+        @mixin atLarge {
+            flex-direction: row;
+        }
     }
 
     &__trip-1 {
 
     }
 
-    &__trip-2 {
-        
+    &__trip-2 .main-trips__imgs{
+        @mixin atLarge {
+            order: 1;
+        }
+    }
+
+    &__trip-2 .main-trips__details {
+        @mixin atLarge {
+            order: 2;
+        }
     }
 
     &__imgs {
-        background-color: red;
+        background-color: $tan;
         position: relative;
+        order: 2;
+        display: flex;
+        justify-items: stretch;
+        height: 10rem;
+        width: 100%;
+        @mixin atSmall {
+            height: 15rem;
+        }
+
+        @mixin atLarge{
+            height: 100%;
+            flex: 40%;
+            display: block;
+        }
     }
 
     &__img {
-       
+        /*so the images stretch and cover the whole width of its parent*/
+        flex: 1;
+        @mixin atLarge {
+            width: 25rem;
+            position: absolute;
+        }
+    }
 
-        
+    &__img img {
+        height: 100%;    
+        width: 100%;
     }
 
     &__img-1 {
@@ -40,17 +75,41 @@
     }
 
     &__details {
-        
+        order: 1;
         background-color: $primary;
         color: $snow;
+        padding: 3.5rem;
+
+        @mixin atSmall {
+            padding: 5rem;
+        }
+
+        @mixin atLarge {
+            flex: 60%;
+            padding: 7rem;
+        }
     }
 
     &__heading {
+        color: $tan;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid $tan;
 
+        @mixin atSmall {
+            font-size: 4rem;
+        }
     }
 
     &__description {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        text-align: center;
 
+        @mixin atSmall {
+            font-size: 1.6rem;
+        }
     }
 
 }
