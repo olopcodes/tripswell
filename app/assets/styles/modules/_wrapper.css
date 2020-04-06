@@ -8,6 +8,17 @@
         margin: 0 auto;
     }
 
+    @mixin atMedium {
+        padding: 0 4rem;
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+
+    @mixin atXXLarge {
+        padding: 0 6rem;
+        max-width: 160rem;
+    }
+
     &--header {
         @mixin atLarge {
             display: flex;

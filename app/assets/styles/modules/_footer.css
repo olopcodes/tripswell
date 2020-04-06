@@ -12,6 +12,9 @@
     &__logo {
         flex: 1;
         font-size: 3rem;
+        @mixin atXXLarge {
+            font-size: 5rem;
+        }
     }
 
     &__links {
@@ -25,6 +28,10 @@
         font-size: 1.3rem;
         text-transform: uppercase;
 
+        @mixin atXXLarge {
+            font-size: 2rem;
+        }
+
         &:hover {
             color: $tan;
         }
@@ -34,6 +41,9 @@
         flex: 100%;
         margin: 1rem 0;
         text-align: center;
+        @mixin atXXLarge {
+            font-size: 2rem;
+        }
 
         @mixin atLarge {
             margin: 3rem 0;
@@ -56,6 +66,10 @@
         color: $snow;
         width: 100%;
         text-align: center;
+
+        @mixin atXXLarge {
+            font-size: 1.6rem;
+        }
     }
    
 }

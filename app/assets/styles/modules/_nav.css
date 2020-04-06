@@ -9,8 +9,14 @@
         width: 50rem;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+
     }
 
+    @mixin atXXLarge {
+        width: 80rem;
+        height: 13rem;
+    }
 
     /* this will be added when the hamburger is clicked*/
     &.show {
@@ -103,6 +109,12 @@
             font-size: 1.8rem;
             line-height: 1.8;
         }
+
+        @mixin atXXLarge {
+            font-size: 3rem;
+            padding: 2rem;
+        }
+
     }
 
     &__link:hover {
@@ -113,6 +125,10 @@
         font-size: 1.3rem;
         text-align: center;
         padding-top: 2rem;
+
+        @mixin atLarge {
+            padding-top: 0;
+        }
     }
 
     &__login, &__signup {
@@ -124,6 +140,11 @@
         color: $primary;
         font-weight: bold;
         font-size: 1.8rem;
+
+        @mixin atXXLarge {
+            font-size: 3rem;
+            padding: 2rem 3rem;
+        }
     }
 
     &__login {

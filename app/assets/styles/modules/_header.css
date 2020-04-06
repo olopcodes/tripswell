@@ -16,5 +16,9 @@
         @mixin atLarge {
             font-size: 5rem;
         }
+
+        @mixin atXXLarge {
+            font-size: 7rem;
+        }
     }
 }

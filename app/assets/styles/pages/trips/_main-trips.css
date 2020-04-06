@@ -42,18 +42,36 @@
         }
 
         @mixin atLarge{
-            height: 100%;
+            height: 50rem;
             flex: 40%;
             display: block;
+            background-color: $tan;
+        }
+        
+        @mixin atXXLarge{
+            height: 60rem;
         }
     }
 
     &__img {
         /*so the images stretch and cover the whole width of its parent*/
         flex: 1;
+
         @mixin atLarge {
             width: 25rem;
+            height: 18rem;
             position: absolute;
+            box-shadow: 3px 5px 5px rgba(0,0,0,.3);
+        }
+
+        @mixin atXLarge {
+            width: 30rem;
+            height: 20rem;
+        }
+
+        @mixin atXXLarge {
+            width: 40rem;
+            height: 30rem;
         }
     }
 
@@ -63,15 +81,29 @@
     }
 
     &__img-1 {
-        
+        z-index: 1;
+        top: 5rem;
+        left: 5rem;
     }
 
     &__img-2 {
-       
+        z-index: 3;
+        top: 15rem;
+        right: 5rem;
+        @mixin atXXLarge{
+            right: 8rem;
+        }
+        
     }
 
     &__img-3 {
-       
+        z-index: 2;
+        bottom: 5rem;
+        left: 8rem;
+
+        @mixin atXXLarge{
+            left: 15rem;
+        }
     }
 
     &__details {
@@ -84,9 +116,23 @@
             padding: 5rem;
         }
 
-        @mixin atLarge {
+        @mixin atMedium {
             flex: 60%;
             padding: 7rem;
+        }
+
+        @mixin atLarge {
+            padding: 10rem;
+            height: 50rem;
+        }
+
+        @mixin atXLarge {
+            padding: 15rem;
+        }
+
+        @mixin atXXLarge{
+            height: 60rem;
+            padding: 20rem;
         }
     }
 
@@ -100,6 +146,14 @@
         @mixin atSmall {
             font-size: 4rem;
         }
+
+        @mixin atLarge {
+            font-size: 5rem;
+        }
+
+        @mixin atXXLarge{
+            left: 15rem;
+        }
     }
 
     &__description {
@@ -109,6 +163,9 @@
 
         @mixin atSmall {
             font-size: 1.6rem;
+        }
+        @mixin atLarge {
+            font-size: 2rem;
         }
     }
 

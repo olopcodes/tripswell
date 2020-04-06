@@ -21,7 +21,7 @@
         background: linear-gradient(144deg, rgba(75,100,75,.9) 3%, 
                 rgba($snow, .8) 92%), url('../../assets/images/trip-hero-large.jpg') no-repeat center;
         background-size: cover;
-        height: 90vh;
+        height: 95vh;
     }
 
     &__text {
@@ -31,16 +31,31 @@
     &__heading {
         color: $primary;
         font-size: 4rem;
+        @mixin atLarge {
+            font-size: 6rem;
+        }
+
+        @mixin atXXLarge {
+            font-size: 10rem;
+        }
     }
 
     &__description {
         color: $snow;
         font-size: 2rem;
         padding: 1rem;
+
+        @mixin atLarge {
+            font-size: 3rem;
+        } 
+        
+        @mixin atXXLarge {
+            font-size: 6rem;
+        }
     }
 
     &__hash {
-        color: $primary;
+        color: $secondary;
         font-style: italic;
         font-weight: bold;
     }
