@@ -1,0 +1,31 @@
+.review-trips {
+    background-color: $lightBlue;
+    padding: 5rem 0;
+
+    &__heading {
+        color: $primary;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__review {
+        
+    }
+
+    &__img {
+
+    }
+
+    &__text {
+
+    }
+
+    &__description {
+
+    }
+
+    &__author {
+        
+    }
+}
