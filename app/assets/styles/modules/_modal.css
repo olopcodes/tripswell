@@ -7,7 +7,7 @@
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 100;
+    z-index: 10000;
     background-color: $primary;
     
     
@@ -15,6 +15,10 @@
         font-size: 4rem;
         font-style: italic;
         margin: 3rem 0;
+
+        @mixin atXLarge {
+            font-size: 7rem;
+        }
     }
 
     &__close {
@@ -25,6 +29,11 @@
         font-size: 1.3rem;
         color: $snow;
         text-align: right;
+
+        @mixin atMedium {
+            font-size: 2rem;
+            margin-right: 5rem;
+        }
     }
 
 
@@ -32,9 +41,21 @@
         width: 80%;
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        margin: 15rem auto;
         height: 25rem;
         transition: .25s ease-in-out;
+
+        @mixin atSmall {
+            width: 70%;
+        }
+        @mixin atMedium {
+            width: 65%;
+        }
+
+        @mixin atXLarge {
+            width: 50%;
+            margin: 20rem auto;
+        }
     }
 
     &__logo {
@@ -60,6 +81,14 @@
         font-size: 1.5rem;
         color: $secondary;
         padding: 1rem;
+
+        @mixin atMedium {
+            font-size: 2rem;
+        }
+
+        @mixin atXXLarge {
+            font-size: 3rem;
+        }
     }
 
     &__input {
@@ -70,6 +99,14 @@
         outline: none;
         border-radius: 1rem;
         margin-bottom: 2rem;
+
+        @mixin atMedium {
+            font-size: 1.7rem;
+        }
+
+        @mixin atXXLarge {
+            font-size: 2.7rem;
+        }
     }
 
     &__btn {
@@ -83,6 +120,15 @@
         color: $primary;
         background-color: $snow;
         cursor: pointer;
+       
+        @mixin atMedium {
+            font-size: 1.7rem;
+        }
+
+        @mixin atMedium {
+            font-size: 2.7rem;
+        }
+
     }
 
     &__label--signup {
