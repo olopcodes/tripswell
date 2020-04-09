@@ -16,9 +16,15 @@
 @import 'modules/_footer';
 @import 'modules/_modal';
 @import 'modules/_row';
+
 @import 'pages/trips/_hero-trips';
 @import 'pages/trips/_main-trips';
 @import 'pages/trips/_review-trips';
+
+@import 'pages/blogs/_blog-hero';
+@import 'pages/blogs/_blog-row';
+@import 'pages/blogs/_blog-main';
+
 
 
 

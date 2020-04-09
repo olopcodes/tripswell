@@ -1,0 +1,61 @@
+.blog-main {
+    background-color: $lightBlue;
+    padding: 5rem 0;
+
+    &__blog {
+        margin-bottom: 3rem;
+    }
+
+    &__img {
+        position: relative;
+    }
+
+    &__img-text {
+        background-color: $lightBlue;
+        position: absolute;
+        width: 95%;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        font-size: 1.3rem;
+        color: $primary;
+    }
+
+    &__post {
+        margin-top: 2rem;
+    }
+
+    /*the text box will be animated with the button*/
+    &__text {
+        height: 20rem;
+        overflow: hidden;
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        color: $primary;
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+    &__heading::after {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 30%;
+        background-color: $primary;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        margin: 2rem 0;
+    }
+
+
+    
+}
