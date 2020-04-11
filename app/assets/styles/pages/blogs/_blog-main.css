@@ -1,7 +1,10 @@
 .blog-main {
     background-color: $lightBlue;
     padding: 5rem 0;
-
+    @mixin atLarge {
+        float: left;
+        width: 70%;
+    }
     &__blog {
         margin-bottom: 3rem;
     }
@@ -55,6 +58,10 @@
         padding-bottom: 5px;
         @mixin atSmall {
             font-size: 3.5rem;
+        }
+
+        @mixin atLarge {
+            font-size: 4.5rem;
         }
     }
 

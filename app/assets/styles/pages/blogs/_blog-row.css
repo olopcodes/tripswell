@@ -1,0 +1,5 @@
+.blog-row{
+    &--one {
+        @mixin clearfix;
+    }
+}
