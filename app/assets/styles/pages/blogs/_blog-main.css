@@ -34,6 +34,10 @@
             font-size: 1.6rem;
             width: 90%;
         }
+
+        @mixin atLarge {
+            font-size: 2rem;
+        }
     }
 
     &__post {
@@ -45,10 +49,19 @@
     &__text {
         height: 20rem;
         overflow: hidden;
+        transition: height .3s;
 
         @mixin atSmall {
             height: 22rem;
         }
+
+        @mixin atLarge {
+            height: 17rem;
+        }
+    }
+
+    &__text.show {
+        height: 26rem;
     }
 
     &__heading {

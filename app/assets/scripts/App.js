@@ -1,9 +1,9 @@
 import '../styles/styles.css';
 import 'lazysizes';
+import ShowPost from './modules/ShowPost';
 import ShowNav from './modules/ShowNav';
 import ShowModal from './modules/ShowModal';
 import Slider from './modules/Slider';
-
 // import ClientArea from './modules/ClientArea';
 
 // React related code
@@ -15,20 +15,28 @@ import Slider from './modules/Slider';
 
 // ReactDOM.render(<MyAmazingComponent />, document.querySelector('#react-example'))
 
+
+
+// this cause issues for me because it was not on the slider 
+// was not on the page
+// this will check if en element will current is on the page
+// w/o this it will cause problems
+
+
+// classes for all pages
 new ShowNav();
 new ShowModal();
-new Slider();
+
+// page specific classes
+if(document.querySelector('.blog-hero')) {
+    new ShowPost();
+}
+
+if (document.querySelector('.current')){
+    new Slider();
+}
+ 
 
 
-// inheritance
-// class Adult extends Person {
-//     payTaxes () {
-//         console.log(`${this.name} has to pay taxes now!`)
-//     }
-// }
-// const bob = new Person('Bob', 'purple');
-// bob.greet();
 
-// const jan = new Adult('Jan', 'orange');
-// jan.greet();
-// jan.payTaxes();
+
