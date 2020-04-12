@@ -21,6 +21,9 @@
 @import 'pages/trips/_main-trips';
 @import 'pages/trips/_review-trips';
 
+@import 'pages/about/_about-hero';
+
+
 @import 'pages/blogs/_blog-hero';
 @import 'pages/blogs/_blog-row';
 @import 'pages/blogs/_blog-main';

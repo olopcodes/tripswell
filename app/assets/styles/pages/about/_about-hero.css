@@ -1,0 +1,73 @@
+.about-hero {
+    background: linear-gradient(144deg, rgba(75,100,75,.9) 3%, 
+                rgba($snow, .8) 92%), url('../../assets/images/about-hero-small.jpg') no-repeat center;
+    background-size: cover;
+    padding: 5rem 0;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @mixin atMedium {
+        background: linear-gradient(144deg, rgba(75,100,75,.9) 3%, 
+                rgba($snow, .8) 92%), url('../../assets/images/about-hero-medium.jpg') no-repeat center;
+        background-size: cover;
+        height: 75vh;
+    }
+
+    @mixin atLarge {
+        background: linear-gradient(144deg, rgba(75,100,75,.9) 3%, 
+                rgba($snow, .8) 92%), url('../../assets/images/about-hero-large.jpg') no-repeat center;
+        background-size: cover;
+        height: 95vh;
+    }
+
+    @mixin atXXLarge {
+        background: linear-gradient(144deg, rgba(75,100,75,.9) 3%, 
+                rgba($snow, .8) 92%), url('../../assets/images/about-hero-xlarge.jpg') no-repeat center;
+        background-size: cover;
+        height: 95vh;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__heading {
+        color: $primary;
+        font-size: 4rem;
+        text-transform: capitalize;
+        @mixin atLarge {
+            font-size: 6rem;
+        }
+
+        @mixin atXXLarge {
+            font-size: 10rem;
+        }
+    }
+
+    &__description {
+        color: $snow;
+        font-size: 2rem;
+        padding: 1rem;
+
+        @mixin atLarge {
+            font-size: 3rem;
+        } 
+        
+        @mixin atXXLarge {
+            font-size: 6rem;
+        }
+    }
+
+    &__hash {
+        display: block;
+        color: $secondary;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+
+}
