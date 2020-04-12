@@ -1,0 +1,98 @@
+.about-story {
+    position: relative;
+    padding: 5rem 0;
+
+    &__topleft{
+        width: 0;
+        height: 0;
+        border-top: 10rem solid $secondary;
+        border-right: 10rem solid transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @mixin atMedium{
+            border-top: 15rem solid $secondary;
+            border-right: 15rem solid transparent;   
+        }
+
+        @mixin atXLarge{
+            border-top: 25rem solid $secondary;
+            border-right: 25rem solid transparent;   
+        }
+    }
+
+    &__bottomright {
+        width: 0;
+        height: 0;
+        border-bottom: 10rem solid $secondary;
+        border-left: 10rem solid transparent;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        @mixin atMedium {
+            border-bottom: 15rem solid $secondary;
+            border-left: 15rem solid transparent;
+        }
+
+        @mixin atXLarge {
+            border-bottom: 25rem solid $secondary;
+            border-left: 25rem solid transparent;
+        }
+    }
+
+    &__heading {
+        font-size: 3rem;
+        color: $primary;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        @mixin atMedium {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+
+        }
+
+        @mixin atXLarge {
+            font-size: 6rem;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 1.4rem 0;
+        position: relative;
+        z-index: 5;
+        
+        @mixin atMedium {
+            font-size: 1.6rem;
+        }
+
+        @mixin atXLarge {
+            font-size: 2rem;
+        }
+    }
+
+    &__img {
+        padding: 1rem;
+        border: 2px solid $secondary;
+        z-index: 1;
+        bottom: 0;
+
+        @mixin atLarge {
+            margin-top: 3rem;
+            width: 30rem;
+            object-fit: cover;
+        }
+
+        @mixin atXLarge {
+            padding: 2rem;
+            margin-top: 6rem;
+            width: 35rem;
+            object-fit: cover;
+            border: 5px solid $secondary;
+        }
+    }
+}
