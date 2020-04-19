@@ -1,4 +1,4 @@
-const currentTask = process.env.npm_lifecycle_event;
+const currentTask = process.env.npm_lifecycle_event
 const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MinifyCss = require('mini-css-extract-plugin');
@@ -17,7 +17,7 @@ const postCssPlugins = [
 class RunAfterCompile {
     apply(compiler) {
       compiler.hooks.done.tap('Copy images', function() {
-        fse.copySync('./app/assets/images', './docs/assets/images');
+        fse.copySync('./app/assets/images', './docs/assets/images')
       })
     }
   }
@@ -91,7 +91,7 @@ if(currentTask == 'dev') {
         host: '0.0.0.0'
     };
 
-    config.mode = 'development';
+    config,mode = 'development';
 }
 
 
@@ -105,7 +105,7 @@ if(currentTask == 'build') {
         // new name of bundled js
         filename: '[name].[chunkhash].js',
         chunkFilename: '[name].[chunkhash].js',
-        // creates a new folder where the bundled assets sit named docs
+        // so that the file sits next to the index file
         path: path.resolve(__dirname, 'docs')
     };
 
@@ -126,4 +126,4 @@ if(currentTask == 'build') {
 
 
 
-module.exports = config;
+module.exports = config
